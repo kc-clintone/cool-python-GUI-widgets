@@ -4,7 +4,7 @@ from tkinter import ttk
 # functions
 # window
 window = tk.Tk()
-window.geometry('220x310')
+window.geometry('220x150')
 window.title("A simple drop-down list")
 
 # widget
