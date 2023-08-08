@@ -6,6 +6,8 @@ from tkinter import ttk
 app = tk.Tk()
 app.title('A simple spinbox')
 app.geometry('200x100')
+
 # widget
+#---Spinbox---
 # run program
 app.mainloop()
