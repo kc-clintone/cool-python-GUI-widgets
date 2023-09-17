@@ -5,7 +5,7 @@ from random import choice
 #app
 app = tk.Tk()
 app.geometry('600x400')
-app.title('Excel')
+app.title('Excel_like_app')
 
 #dummy_data
 f_names = ['Gary', 'Simon', 'Greg', 'David', 'Will', 'Bill', 'Val', 'Gill', 'Bob', 'Anne', 'Jane']
@@ -20,18 +20,18 @@ excel.heading('e', text = 'Email Addr')
 excel.pack(fill = 'both', expand = 'True')
 
 #events
-def _delete(_):
+def _dlt_entry(_):
     for i in excel.selection():
         excel.delete(i)
     # excel.selection_clear
     print('Item deleted')
 
-def selected(_):
+def selected_entry(_):
     print(excel.selection())
     for i in excel.selection():
         print(excel.item(i)['values'])
-excel.bind('<<TreeviewSelect>>', selected)
-excel.bind('<Delete>', _delete)
+excel.bind('<<TreeviewSelect>>', selected_entry)
+excel.bind('<Delete>', _dlt_entry)
 
 #insert
 # excel.insert(parent = '', index = 0, values = ('Kaysee', 'Jill', 'kc@gmail.com'))
