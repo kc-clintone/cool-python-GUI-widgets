@@ -1,29 +1,34 @@
 import tkinter as tk
 import ttkbootstrap as ttk
+import random
 
-#====app logic=====
-def accept():
-	print('I knew it!')
+def change_window_position():
+    # Generating random coordinates within the screen dimensions
+    x = random.randint(0, app.winfo_screenwidth() - 200)
+    y = random.randint(0, app.winfo_screenheight() - 200)
+    app.geometry(f"200x200+{x}+{y}")
 
-def mouse_over_event(param):
-	pass
+def change_text_and_buttons():
+    title.config(text='I knew you were stupid.', font=("Helvetica", 12, "bold"))
+    yes_btn.pack_forget()
+    no_btn.pack_forget()
 
-
+# Create the main window
 app = ttk.Window()
-app.title('Stupid Game')
-app.geometry('150x100')
+app.title("Stupid Game")
+app.geometry("200x200")
+app.resizable(False, False)
 
-title = ttk.Label(master = app, text = 'Are you stupid?', font = 'Calibri 15')
-title.pack()
+# Create the label with the text
+title = ttk.Label(app, text="Are you stupid?", font=("Helvetica", 12, "bold"))
+title.pack(pady=20)
 
-container = ttk.Frame(master = app)
-btn_yes = ttk.Button(master = container, text = 'Yes', command = accept)
-btn_no = ttk.Button(master = container, text = 'No')
+# Create the 'Yes' button
+yes_btn = tk.Button(app, text="Yes", command=change_text_and_buttons)
+yes_btn.pack(side=tk.LEFT, padx=20)
 
-btn_yes.pack(side = 'left')
-btn_no.pack(side = 'left', padx = 10)
-container.pack(pady = 15)
-
-btn_no.bind('<Motion>', lambda event: mouse_over_event(event))
+# Create the 'No' button
+no_btn = tk.Button(app, text="No", command=change_window_position)
+no_btn.pack(side=tk.RIGHT, padx=20)
 
 app.mainloop()
