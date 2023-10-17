@@ -3,6 +3,7 @@ from tkinter import ttk
 #====main window=====
 app = tk.Tk()
 app.title("Progress bars")
+app.geometry('200x600')
 
 vertical = tk.DoubleVar(value = 15)
 scl = ttk.Scale(
