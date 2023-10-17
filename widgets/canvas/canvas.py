@@ -3,7 +3,7 @@ import tkinter as tk
 # function
 # main app
 app = tk.Tk()
-app.geometry('625x475')
+app.geometry('630x430')
 app.title('Simple Canvas')
 
 #---widget
