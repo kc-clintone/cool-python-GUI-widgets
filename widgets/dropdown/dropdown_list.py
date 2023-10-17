@@ -15,6 +15,6 @@ combo = ttk.Combobox(window, textvariable=groceries)
 combo['values'] = items
 combo.pack(pady=7)
 combo.bind('<<ComboboxSelected>>', lambda event: print(f'You selected: {groceries.get()}'))
-## ---
+## -----functions------
 # run the program
 window.mainloop()
