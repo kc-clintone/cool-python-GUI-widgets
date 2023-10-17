@@ -9,7 +9,7 @@ def convert_logic():
 #-----application window-------
 app = ttk.Window(themename = 'darkly')
 app.title("X-Convert")
-app.geometry('340x150')
+app.geometry('350x160')
 
 #------App title-------
 title_label = ttk.Label(master = app, text = 'Miles To Kilometers', font = 'Calibri 18 bold')
