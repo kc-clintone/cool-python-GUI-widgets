@@ -1,13 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
 
-# functions
-# window
+# =====app logic=====
+# =======window=======
 window = tk.Tk()
-window.geometry('220x150')
-window.title("A simple drop-down list")
+window.geometry('225x155')
+window.title("A simple dropdown widget")
 
-# widget
+# ======widget======
 ## ---Combobox---
 items = ('Tomatoes', 'Kales', 'Spinach', 'Onions', 'Garlic', 'Ginger')
 groceries = tk.StringVar(value=items[0])
