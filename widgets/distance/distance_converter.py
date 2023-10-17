@@ -8,7 +8,7 @@ def convert_logic():
 
 #-----application window-------
 app = ttk.Window(themename = 'darkly')
-app.title("X-Convert")
+app.title("Dist-Convert")
 app.geometry('350x160')
 
 #------App title-------
