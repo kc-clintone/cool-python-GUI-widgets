@@ -23,7 +23,7 @@ excel.pack(fill = 'both', expand = 'True')
 def _dlt_entry(_):
     for i in excel.selection():
         excel.delete(i)
-    print('Item deleted')
+    print('Success, item deleted')
 
 def selected_entry(_):
     print(excel.selection())
@@ -32,13 +32,12 @@ def selected_entry(_):
 excel.bind('<<TreeviewSelect>>', selected_entry)
 excel.bind('<Delete>', _dlt_entry)
 
-#insert
-# excel.insert(parent = '', index = 0, values = ('Kaysee', 'Jill', 'kc@gmail.com'))
+#-----insert an item(row)-----
 for i in range(100):
-    _f = choice(f_names)
-    _s = choice(s_names)
-    _e = f'{_f}{_s}@gmail.com'
-    details = (_f, _s, _e)
+    _fn = choice(f_names)
+    _sn = choice(s_names)
+    _em = f'{_fn}{_sn}@gmail.com'
+    details = (_fn, _sn, _em)
     excel.insert(parent = '', index = 0, values = details)
-#exec
+#=====run application======
 app.mainloop()
