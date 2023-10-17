@@ -4,7 +4,7 @@ import tkinter as tk
 # main app
 app = tk.Tk()
 app.geometry('625x475')
-app.title('A simple canvas')
+app.title('Simple Canvas')
 
 #---widget
 canvas = tk.Canvas(app, bg='white')
@@ -24,9 +24,9 @@ def draw(event):
 def increase_brush_size(event):
     global brush_size
     if event.delta > 0:
-        brush_size += 4
+        brush_size += 3.5
     else:
-        brush_size -= 4
+        brush_size -= 3.5
     brush_size = max(0, min(brush_size, 50))
 
 brush_size = 2
