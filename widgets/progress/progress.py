@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-
+#====main window=====
 app = tk.Tk()
 app.title("Progress bars")
 
