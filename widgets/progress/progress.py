@@ -37,6 +37,7 @@ npp = ttk.Progressbar(app, orient = 'vertical', variable = np)
 npp.pack()
 npp.start()
 
-label = ttk.Label(app, )
+indicator = ttk.Label(app, textvariable = np)
+indicator.pack()
 
 app.mainloop()
