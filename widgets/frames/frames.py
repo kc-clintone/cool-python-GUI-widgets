@@ -9,18 +9,29 @@ app.title('Frames')
 # ===== frame =====
 frame = ttk.Frame(
 	app,
-	width = 100,
+	width = 200,
 	height = 200,
 	borderwidth = 10,
 	relief = tk.GROOVE
 )
 frame.pack()
 
+frame2 = ttk.Frame(
+	frame,
+	width = 100,
+	height = 170,
+        borderwidth = 10,
+        relief = tk.GROOVE
+)
+frame2.pack()
+
+
+
 # ===== frame content =====
 label = ttk.Label(frame, text = "Text example")
 label.pack()
 
-lebel2 = ttk.Label(app, text = "Text outside frame")
+label2 = ttk.Label(app, text = "Text outside frame")
 label2.pack()
 
 app.mainloop()
