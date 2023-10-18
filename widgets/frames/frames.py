@@ -28,13 +28,13 @@ frame2.pack()
 
 
 # ===== frame content =====
-label = ttk.Label(frame, text = "Text outside frame2")
+label = ttk.Label(frame, text = "Text inside frame")
 label.pack()
 
 label2 = ttk.Label(frame2, text = "Text inside frame2")
 label2.pack()
 
-label3 = ttk.Label(app, text = "Text inside frame")
+label3 = ttk.Label(app, text = "Text outside the frames")
 label3.pack()
 
 app.mainloop()
