@@ -15,6 +15,7 @@ frame = ttk.Frame(
 	relief = tk.GROOVE
 )
 frame.pack()
+frame.pack(side = 'left')
 
 frame2 = ttk.Frame(
 	frame,
@@ -36,5 +37,6 @@ label2.pack()
 
 label3 = ttk.Label(app, text = "Text outside the frames")
 label3.pack()
+label3.pack(side = 'left')
 
 app.mainloop()
