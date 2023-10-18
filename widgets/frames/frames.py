@@ -20,4 +20,7 @@ frame.pack()
 label = ttk.Label(frame, text = "Text example")
 label.pack()
 
+lebel2 = ttk.Label(app, text = "Text outside frame")
+label2.pack()
+
 app.mainloop()
