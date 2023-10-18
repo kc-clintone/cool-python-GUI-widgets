@@ -40,4 +40,9 @@ npp.start()
 indicatr = ttk.Label(app, textvariable = np)
 indicatr.pack()
 
+# =======another scale=======
+ascale2 = ttk.Scale (app, variable = np, from_ = 0, to = 100)
+ascale2.pack()
+
+# =====run app======
 app.mainloop()
