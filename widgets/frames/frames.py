@@ -18,8 +18,8 @@ frame.pack()
 
 frame2 = ttk.Frame(
 	frame,
-	width = 100,
-	height = 170,
+	width = 90,
+	height = 160,
         borderwidth = 10,
         relief = tk.GROOVE
 )
@@ -31,7 +31,7 @@ frame2.pack()
 label = ttk.Label(frame, text = "Text example")
 label.pack()
 
-label2 = ttk.Label(app, text = "Text outside frame")
+label2 = ttk.Label(frame2, text = "Text outside frame")
 label2.pack()
 
 app.mainloop()
