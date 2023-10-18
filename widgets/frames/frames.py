@@ -34,4 +34,7 @@ label.pack()
 label2 = ttk.Label(frame2, text = "Text inside frame2")
 label2.pack()
 
+label3 = ttk.Label(app, text = "Text inside frame")
+label3.pack()
+
 app.mainloop()
