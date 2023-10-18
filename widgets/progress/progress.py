@@ -1,9 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import scrolledtext
 #====main window=====
 app = tk.Tk()
 app.title("Progress bars")
-app.geometry('200x600')
+app.geometry('400x400')
 
 vertical = tk.DoubleVar(value = 15)
 scl = ttk.Scale(
@@ -17,6 +18,7 @@ scl = ttk.Scale(
 )
 scl.pack()
 
+# ====progress bar=====
 progress = ttk.Progressbar(
     app,
     variable = vertical,
@@ -25,5 +27,9 @@ progress = ttk.Progressbar(
     length = 400
 )
 progress.pack()
+
+# ====scrolled text ======
+sc = scrolledtext.ScrolledText(app, height = 10)
+sc.pack()
 
 app.mainloop()
