@@ -17,7 +17,13 @@ scl = ttk.Scale(
 )
 scl.pack()
 
-progress = ttk.Progressbar(app, variable = vertical, maximum = 30)
+progress = ttk.Progressbar(
+    app,
+    variable = vertical,
+    maximum = 30,
+    orient = 'horizontal'
+    length = 400
+)
 progress.pack()
 
 app.mainloop()
