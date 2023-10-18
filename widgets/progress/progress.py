@@ -31,5 +31,12 @@ progress.pack()
 # ====scrolled text ======
 sc = scrolledtext.ScrolledText(app, height = 10)
 sc.pack()
+# =======numeric progress========
+np = tk.IntVar()
+npp = ttk.Progressbar(app, orient = 'vertical', variable = np)
+npp.pack()
+npp.start()
+
+label = ttk.Label(app, )
 
 app.mainloop()
