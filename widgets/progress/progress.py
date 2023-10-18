@@ -4,7 +4,7 @@ from tkinter import scrolledtext
 #====main window=====
 app = tk.Tk()
 app.title("Progress bars")
-app.geometry('400x400')
+app.geometry('400x800')
 
 vertical = tk.DoubleVar(value = 15)
 scl = ttk.Scale(
